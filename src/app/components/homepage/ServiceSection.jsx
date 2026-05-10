@@ -41,7 +41,7 @@ export default function ServiceSection() {
   ];
 
   return (
-    <section className="relative">
+    <section id="services" className="relative">
       {/* Background Decoration */}
       {/* <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-100 rounded-full blur-3xl opacity-40" /> */}
 
@@ -65,13 +65,6 @@ export default function ServiceSection() {
               traveler.
             </p>
           </div>
-
-          <Link
-            href="/services"
-            className="w-fit rounded-full border border-neutral-900 px-8 py-4 text-sm uppercase tracking-[0.2em] hover:bg-black hover:text-white transition"
-          >
-            Explore Services
-          </Link>
         </div>
 
         {/* Services */}

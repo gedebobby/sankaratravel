@@ -4,54 +4,76 @@ import Link from "next/link";
 export default function TourSection() {
   const tours = [
     {
-      title: "Ubud Cultural Journey",
-      slug: "ubud-cultural-journey",
-      price: "IDR 1.000K",
-      duration: "10 Hours",
-      image:
-        "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop",
+      title: "Ubud",
+      slug: "ubud",
+      location: "Central Bali",
+      image: "/assets/img/ubud.webp",
       description:
-        "Explore the cultural heart of Bali through traditional villages, sacred temples, rice terraces, and hidden waterfalls surrounded by lush tropical scenery.",
+        "Famous for rice terraces, jungle scenery, waterfalls, art villages, and Bali’s cultural atmosphere.",
     },
     {
-      title: "Kintamani Highland Tour",
-      slug: "kintamani-highland-tour",
-      price: "IDR 1.200K",
-      duration: "10 Hours",
-      image:
-        "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?q=80&w=1200&auto=format&fit=crop",
+      title: "Kintamani",
+      slug: "kintamani",
+      location: "Highland Bali",
+      image: "/assets/img/kintamani.webp",
       description:
-        "Experience breathtaking views of Mount Batur, visit iconic temples, and discover the peaceful atmosphere of Bali’s beautiful highland region.",
+        "Experience breathtaking volcano views, cool mountain air, coffee plantations, and sunrise adventures.",
     },
     {
-      title: "Kintamani Adventure Experience",
-      slug: "kintamani-adventure-experience",
-      price: "IDR 1.200K",
-      duration: "10 Hours",
-      image:
-        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      title: "Uluwatu",
+      slug: "uluwatu",
+      location: "South Bali",
+      image: "/assets/img/uluwatu.webp",
       description:
-        "Enjoy an unforgettable sunrise adventure with jeep rides, mountain landscapes, and refreshing morning views above the clouds at Mount Batur.",
+        "Known for dramatic ocean cliffs, luxury beach clubs, world-class surf spots, and sunset views.",
+    },
+    {
+      title: "Nusa Penida",
+      slug: "nusa-penida",
+      location: "Island Escape",
+      image: "/assets/img/nusa-penida.webp",
+      description:
+        "Discover crystal-clear beaches, iconic cliff formations, snorkeling spots, and untouched island beauty.",
+    },
+    {
+      title: "Bedugul",
+      slug: "bedugul",
+      location: "North Bali",
+      image: "/assets/img/bedugul.webp",
+      description:
+        "Explore peaceful lakes, mountain landscapes, botanical gardens, and the iconic Ulun Danu Temple.",
+    },
+    {
+      title: "Tanah Lot",
+      slug: "tanah-lot",
+      location: "West Bali",
+      image: "/assets/img/tanah-lot.webp",
+      description:
+        "One of Bali’s most famous sea temples, perfect for cultural sightseeing and magical sunset moments.",
     },
   ];
 
   return (
-    <section className="bg-white py-24 px-6 lg:px-10">
+    <section id="tours" className="bg-white">
       <div className="container-nav">
         {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="uppercase tracking-[0.3em] text-sm text-neutral-500 mb-4">
-            Bali Tours
-          </p>
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 mb-16">
+          <div className="max-w-3xl">
+            <p className="uppercase tracking-[0.3em] text-sm text-neutral-500 mb-4">
+              Bali Destinations
+            </p>
 
-          <h2 className="text-4xl md:text-5xl font-light text-neutral-900 mb-6">
-            Explore Bali Experiences
-          </h2>
+            <h2 className="text-4xl md:text-6xl font-light text-neutral-900 leading-tight mb-6">
+              Most Visited Places
+              <br />
+              In Bali
+            </h2>
 
-          <p className="text-neutral-600 leading-relaxed">
-            Discover curated private tours across Bali’s most beautiful
-            destinations.
-          </p>
+            <p className="text-neutral-600 leading-relaxed text-lg">
+              Explore Bali’s iconic destinations loved by travelers from around
+              the world.
+            </p>
+          </div>
         </div>
 
         {/* Grid */}
@@ -59,42 +81,40 @@ export default function TourSection() {
           {tours.map((tour, index) => (
             <div
               key={index}
-              className="group rounded-[28px] overflow-hidden border border-neutral-200 bg-white hover:shadow-xl transition duration-500"
+              className="group overflow-hidden rounded-[30px] bg-neutral-100"
             >
               {/* Image */}
-              <div className="relative h-[340px] overflow-hidden">
+              <div className="relative h-[420px] overflow-hidden">
                 <img
                   src={tour.image}
                   alt={tour.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="text-sm uppercase tracking-[0.2em] mb-2 opacity-80">
-                    {tour.price} / {tour.duration}
+                {/* Content Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <p className="uppercase tracking-[0.25em] text-xs opacity-80 mb-3">
+                    {tour.location}
                   </p>
 
-                  <h3 className="text-2xl font-light leading-snug">
-                    {tour.title}
-                  </h3>
+                  <h3 className="text-3xl font-light mb-4">{tour.title}</h3>
+
+                  <p className="text-white/80 leading-relaxed mb-8">
+                    {tour.description}
+                  </p>
+
+                  <Link
+                    href={`/destinations/${tour.slug}`}
+                    className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em]"
+                  >
+                    Explore Destination
+                    <span className="group-hover:translate-x-1 transition">
+                      →
+                    </span>
+                  </Link>
                 </div>
-              </div>
-
-              {/* Content */}
-              <div className="p-6">
-                <p className="text-neutral-600 leading-relaxed mb-6">
-                  {tour.description}
-                </p>
-
-                <Link
-                  href={`/tours/${tour.slug}`}
-                  className="inline-flex items-center justify-between w-full rounded-full border border-neutral-300 px-6 py-4 text-sm uppercase tracking-[0.2em] hover:bg-black hover:text-white transition"
-                >
-                  View Details
-                  <span>→</span>
-                </Link>
               </div>
             </div>
           ))}

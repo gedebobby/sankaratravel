@@ -7,8 +7,7 @@ export default function CTA() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop')",
+            backgroundImage: "url('/assets/img/cta.webp')",
           }}
         />
 

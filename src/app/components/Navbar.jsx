@@ -21,93 +21,132 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when menu open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [open]);
+
+  const menus = [
+    {
+      name: "About",
+      href: "#about",
+    },
+    {
+      name: "Services",
+      href: "#services",
+    },
+    {
+      name: "Tours",
+      href: "#tours",
+    },
+    {
+      name: "Contact",
+      href: "#contact",
+    },
+  ];
+
   return (
-    <nav
-      className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-black/80 py-4 shadow-lg backdrop-blur-md"
-          : "bg-transparent py-6"
-      }`}
-    >
-      <div className="container-nav flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold tracking-wide text-white">
-          MyBrand
-        </Link>
-
-        {/* Desktop Menu */}
-        <div className="hidden items-center gap-8 md:flex">
-          <Link
-            href="/"
-            className="text-sm font-medium text-white transition hover:text-gray-300"
-          >
-            Home
-          </Link>
-
-          <Link
-            href="/about"
-            className="text-sm font-medium text-white transition hover:text-gray-300"
-          >
-            About
-          </Link>
-
-          <Link
-            href="/services"
-            className="text-sm font-medium text-white transition hover:text-gray-300"
-          >
-            Services
-          </Link>
-
-          <Link
-            href="/contact"
-            className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black"
-          >
-            Contact
-          </Link>
-        </div>
-
-        {/* Mobile Button */}
-        <button onClick={() => setOpen(!open)} className="text-white md:hidden">
-          {open ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`overflow-hidden transition-all duration-300 md:hidden ${
-          open ? "max-h-96" : "max-h-0"
+    <>
+      {/* Navbar */}
+      <nav
+        className={`fixed top-0 left-0 z-[999] w-full transition-all duration-300 ${
+          scrolled
+            ? "bg-black/80 py-4 shadow-lg backdrop-blur-md"
+            : "bg-transparent py-6"
         }`}
       >
-        <div className="flex flex-col gap-5 bg-black/90 px-6 py-6 backdrop-blur-md">
-          <Link href="/" className="text-white" onClick={() => setOpen(false)}>
-            Home
+        <div className="container-nav flex items-center justify-between">
+          {/* Logo */}
+          <Link
+            href="#home"
+            className="text-2xl leading-[90%] text-center font-bold tracking-wide text-white z-[999]"
+          >
+            ARYANA <br /> TOUR
           </Link>
 
-          <Link
-            href="/about"
-            className="text-white"
-            onClick={() => setOpen(false)}
-          >
-            About
-          </Link>
+          {/* Desktop Menu */}
+          <div className="hidden items-center md:gap-10 lg:gap-16 md:flex">
+            {menus.map((menu, index) => (
+              <a
+                key={index}
+                href={menu.href}
+                className="text-md font-medium tracking-wider text-white transition hover:text-gray-300"
+              >
+                {menu.name}
+              </a>
+            ))}
 
-          <Link
-            href="/services"
-            className="text-white"
-            onClick={() => setOpen(false)}
-          >
-            Services
-          </Link>
+            <a
+              href="https://wa.me/628123456789"
+              target="_blank"
+              className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black"
+            >
+              Book Now
+            </a>
+          </div>
 
-          <Link
-            href="/contact"
-            className="rounded-full border border-white px-4 py-2 text-center text-white"
-            onClick={() => setOpen(false)}
+          {/* Mobile Button */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-white z-[999] md:hidden"
           >
-            Contact
-          </Link>
+            {open ? <X size={30} /> : <Menu size={30} />}
+          </button>
+        </div>
+      </nav>
+
+      {/* Overlay */}
+      <div
+        onClick={() => setOpen(false)}
+        className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300 md:hidden ${
+          open
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+      />
+
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed top-0 right-0 h-screen w-full max-w-sm bg-black text-white z-40 transition-transform duration-500 ease-in-out md:hidden ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col justify-between h-full px-8 py-32">
+          {/* Menu */}
+          <div className="flex flex-col gap-8">
+            {menus.map((menu, index) => (
+              <a
+                key={index}
+                href={menu.href}
+                onClick={() => setOpen(false)}
+                className="text-3xl font-light tracking-wide hover:translate-x-1 transition"
+              >
+                {menu.name}
+              </a>
+            ))}
+          </div>
+
+          {/* Bottom */}
+          <div className="space-y-6">
+            <a
+              href="https://wa.me/628123456789"
+              target="_blank"
+              className="flex items-center justify-center rounded-full border border-white px-6 py-4 text-sm uppercase tracking-[0.2em] transition hover:bg-white hover:text-black"
+            >
+              Book Now
+            </a>
+
+            <p className="text-sm text-white/50 leading-relaxed">
+              Explore Bali with private tours, local experiences, and
+              unforgettable island journeys.
+            </p>
+          </div>
         </div>
       </div>
-    </nav>
+    </>
   );
 }

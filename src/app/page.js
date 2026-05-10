@@ -12,7 +12,7 @@ export default function Home() {
       <AboutSection />
       <TourSection />
       <ServiceSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <CTA />
     </>
   );

@@ -32,8 +32,8 @@ export default function AboutSection() {
             About Us
           </p>
 
-          <h2 className="text-4xl md:text-5xl leading-tight font-light mb-8">
-            DISCOVER BALI WITH LOCAL EXPERTISE
+          <h2 className="text-4xl md:text-5xl leading-tight font-light mb-8 uppercase">
+            Discover Bali With Local Expertise
           </h2>
 
           <p className="text-neutral-600 leading-relaxed mb-6">
@@ -53,9 +53,9 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className="relative h-[650px] rounded-lg overflow-hidden shadow-2xl">
+        <div className="relative h-[400px] lg:h-[650px] rounded-lg overflow-hidden shadow-2xl">
           <img
-            src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+            src="/assets/img/about.webp"
             alt="Bali Travel"
             className="w-full h-full object-cover"
           />
