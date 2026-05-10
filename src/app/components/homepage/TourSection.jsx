@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function TourSection() {
   const tours = [
@@ -85,9 +86,11 @@ export default function TourSection() {
             >
               {/* Image */}
               <div className="relative h-[420px] overflow-hidden">
-                <img
+                <Image
                   src={tour.image}
                   alt={tour.title}
+                  width={1080}
+                  height={1080}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
 

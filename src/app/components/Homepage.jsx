@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Navbar from "./Navbar";
 
 export default function HomePage() {
@@ -119,7 +120,7 @@ export default function HomePage() {
         </div>
 
         <div className="relative h-[650px] rounded-[32px] overflow-hidden shadow-2xl">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
             alt="Bali Travel"
             className="w-full h-full object-cover"

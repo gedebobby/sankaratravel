@@ -1,4 +1,5 @@
 import { MapPinned, CarTaxiFront, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   const features = [
@@ -54,10 +55,12 @@ export default function AboutSection() {
         </div>
 
         <div className="relative h-[400px] lg:h-[650px] rounded-lg overflow-hidden shadow-2xl">
-          <img
+          <Image
             src="/assets/img/about.webp"
             alt="Bali Travel"
             className="w-full h-full object-cover"
+            width={1920}
+            height={1280}
           />
         </div>
       </section>
