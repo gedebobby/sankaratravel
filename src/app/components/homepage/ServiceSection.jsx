@@ -38,6 +38,13 @@ export default function ServiceSection() {
         "Discover Bali’s iconic landscapes, temples, and hidden gems in one unforgettable day.",
       link: "/services/full-exploration",
     },
+    {
+      title: "Full Day Exploration Journey",
+      price: "IDR 800K - 1000K",
+      description:
+        "Enjoy a full-day Bali adventure visiting stunning temples, scenic landscapes, waterfalls, beaches, and hidden destinations with a flexible private tour experience.",
+      link: "/services/full-exploration",
+    },
   ];
 
   return (
@@ -99,7 +106,7 @@ export default function ServiceSection() {
                 </p>
 
                 <Link
-                  href={service.link}
+                  href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour."
                   className="flex items-center gap-3 text-sm uppercase tracking-[0.2em] group/button"
                 >
                   <span>Explore</span>

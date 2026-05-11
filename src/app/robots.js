@@ -5,6 +5,6 @@ export default function robots() {
             allow: "/",
         },
 
-        sitemap: "https://aryanabalitour.com/sitemap.xml",
+        sitemap: "https://aryanabalitour.my.id/sitemap.xml",
     };
 }

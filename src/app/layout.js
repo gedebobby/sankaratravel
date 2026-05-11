@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://aryanabalitour.com"),
+  metadataBase: new URL("https://aryanabalitour.my.id"),
 
   title: {
     default: "Aryana Tour Bali | Private Bali Tours & Travel Services",
@@ -53,7 +53,7 @@ export const metadata = {
   publisher: "Aryana Tour Bali",
 
   alternates: {
-    canonical: "/",
+    canonical: "https://aryanabalitour.my.id",
   },
 
   openGraph: {
@@ -62,13 +62,13 @@ export const metadata = {
     description:
       "Experience unforgettable Bali journeys with private tours, local guides, airport transfers, and curated island adventures.",
 
-    url: "https://aryanabalitour.com",
+    url: "https://aryanabalitour.my.id",
 
     siteName: "Aryana Tour Bali",
 
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/assets/img/hero.webp",
         width: 1200,
         height: 630,
         alt: "Aryana Tour Bali",
@@ -81,13 +81,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "Aryana Tour Bali | Private Bali Tours & Travel Services",
-
     description:
       "Discover Bali with private tours, local experiences, and unforgettable island adventures.",
-
-    images: ["/og-image.jpg"],
+    images: ["/assets/img/hero.webp"],
   },
 
   robots: {
@@ -102,9 +99,7 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-
   category: "travel",
-
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",

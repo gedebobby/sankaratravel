@@ -85,7 +85,7 @@ export default function TourSection() {
               className="group overflow-hidden rounded-[30px] bg-neutral-100"
             >
               {/* Image */}
-              <div className="relative h-[420px] overflow-hidden">
+              <div className="relative h-105 overflow-hidden">
                 <Image
                   src={tour.image}
                   alt={tour.title}
@@ -94,7 +94,7 @@ export default function TourSection() {
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
                 {/* Content Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
@@ -107,16 +107,6 @@ export default function TourSection() {
                   <p className="text-white/80 leading-relaxed mb-8">
                     {tour.description}
                   </p>
-
-                  <Link
-                    href={`/destinations/${tour.slug}`}
-                    className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em]"
-                  >
-                    Explore Destination
-                    <span className="group-hover:translate-x-1 transition">
-                      →
-                    </span>
-                  </Link>
                 </div>
               </div>
             </div>

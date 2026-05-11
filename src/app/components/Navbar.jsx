@@ -81,7 +81,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="https://wa.me/628123456789"
+              href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour."
               target="_blank"
               className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black"
             >
