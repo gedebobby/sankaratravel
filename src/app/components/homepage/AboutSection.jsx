@@ -38,7 +38,7 @@ export default function AboutSection() {
           </h2>
 
           <p className="text-neutral-600 leading-relaxed mb-6">
-            At Sankara Bali Tour, we believe that every journey in Bali should
+            At Aryana Bali Tour, we believe that every journey in Bali should
             feel meaningful, exciting, and unforgettable. Surrounded by
             breathtaking landscapes, vibrant traditions, and warm hospitality,
             Bali offers more than just destinations — it offers experiences that
@@ -46,7 +46,7 @@ export default function AboutSection() {
           </p>
 
           <p className="text-neutral-600 leading-relaxed mb-6">
-            We focus on creating travel experiences that are relaxed,
+            We focus on creating tour experiences that are relaxed,
             well-organized, and tailored to each guest’s interests. Whether you
             are visiting Bali for adventure, culture, relaxation, or a
             combination of everything, we aim to make every moment enjoyable and

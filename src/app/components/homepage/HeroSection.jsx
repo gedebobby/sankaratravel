@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
 
         <h1 className="text-5xl md:text-7xl leading-tight tracking-wide font-light mb-8">
-          Aryana Travel & Private Tours
+          Aryana Private Tours
         </h1>
 
         <p className="max-w-2xl mx-auto text-base md:text-lg text-neutral-200 tracking-wider leading-relaxed mb-10">
@@ -33,7 +33,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour."
+            href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20transport%20tour."
             target="_blank"
             className="px-8 py-4 border border-white rounded-full hover:bg-white hover:text-black transition"
           >

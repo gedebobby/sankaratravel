@@ -29,12 +29,12 @@ export default function TourSection() {
         "Known for dramatic ocean cliffs, luxury beach clubs, world-class surf spots, and sunset views.",
     },
     {
-      title: "Nusa Penida",
-      slug: "nusa-penida",
-      location: "Island Escape",
-      image: "/assets/img/nusa-penida.webp",
+      title: "Lempuyang Temple",
+      slug: "lempuyang-temple",
+      location: "East Bali",
+      image: "/assets/img/lempuyang.webp",
       description:
-        "Discover crystal-clear beaches, iconic cliff formations, snorkeling spots, and untouched island beauty.",
+        "Visit the iconic Gates of Heaven at Lempuyang Temple and enjoy breathtaking views of Mount Agung surrounded by Bali’s spiritual atmosphere.",
     },
     {
       title: "Bedugul",
@@ -94,7 +94,7 @@ export default function TourSection() {
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
 
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-transparent" />
 
                 {/* Content Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">

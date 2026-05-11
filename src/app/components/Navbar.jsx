@@ -81,7 +81,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour."
+              href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20transport%20tour."
               target="_blank"
               className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-black"
             >
@@ -133,7 +133,7 @@ export default function Navbar() {
           {/* Bottom */}
           <div className="space-y-6">
             <a
-              href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour."
+              href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20transport%20tour."
               target="_blank"
               className="flex items-center justify-center rounded-full border border-white px-6 py-4 text-sm uppercase tracking-[0.2em] transition hover:bg-white hover:text-black"
             >
