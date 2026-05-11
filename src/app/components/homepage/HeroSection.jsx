@@ -33,7 +33,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20transport%20tour."
+            href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour%20transportation%20service."
             target="_blank"
             className="px-8 py-4 border border-white rounded-full hover:bg-white hover:text-black transition"
           >

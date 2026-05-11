@@ -12,8 +12,8 @@ export default function Footer() {
             <h4 className="text-3xl text-white mb-4">Aryana Tour</h4>
 
             <p className="leading-relaxed text-neutral-400 max-w-lg">
-              Bali private tours and travel experiences designed for
-              unforgettable tropical adventures.
+              Bali private tours experiences designed for unforgettable tropical
+              adventures.
             </p>
           </div>
 

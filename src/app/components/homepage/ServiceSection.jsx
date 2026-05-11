@@ -106,7 +106,7 @@ export default function ServiceSection() {
                 </p>
 
                 <Link
-                  href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20transport%20tour."
+                  href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour%20transportation%20service."
                   className="flex items-center gap-3 text-sm uppercase tracking-[0.2em] group/button"
                 >
                   <span>Explore</span>

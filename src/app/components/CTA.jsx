@@ -28,7 +28,7 @@ export default function CTA() {
           </p>
 
           <a
-            href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20transport%20tour."
+            href="https://wa.me/6281337921417?text=Hello%20Aryana%20Tour%2C%20I%20would%20like%20to%20book%20a%20tour%20transportation%20service."
             target="_blank"
             className="inline-flex px-10 py-5 bg-white text-black rounded-full font-medium hover:bg-neutral-200 transition"
           >
