@@ -19,24 +19,17 @@ export default function ServiceSection() {
     },
     {
       title: "Half Day Private Tours",
-      price: "1–4 Hours • IDR 550K",
+      price: "IDR 550K",
       description:
         "Flexible Bali tours designed for travelers who want to explore more destinations in less time.",
       link: "/services/half-day-tour",
     },
     {
       title: "Private Bali Experience",
-      price: "5 Hours • IDR 650K",
+      price: "IDR 650K",
       description:
         "Personalized journeys with relaxing routes, scenic views, and authentic Bali experiences.",
       link: "/services/private-experience",
-    },
-    {
-      title: "Full Exploration Journey",
-      price: "6 Hours • IDR 750K",
-      description:
-        "Discover Bali’s iconic landscapes, temples, and hidden gems in one unforgettable day.",
-      link: "/services/full-exploration",
     },
     {
       title: "Full Day Exploration Journey",
